@@ -1,0 +1,4 @@
+zhoush:
+  this code is for t637p c2 dk first use
+: this tp has no reset
+   this tp i2c address is modified

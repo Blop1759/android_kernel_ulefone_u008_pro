@@ -1,0 +1,4 @@
+
+config FINGERPRINT_GFX1XM_GOODIX
+        bool "FINGERPRINT_GFX1XM_GOODIX"
+        default n

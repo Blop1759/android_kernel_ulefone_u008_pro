@@ -1,0 +1,4 @@
+
+config FINGERPRINT_AFS120
+        bool "FINGERPRINT_AFS120"
+        default n

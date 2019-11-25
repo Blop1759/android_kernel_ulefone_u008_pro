@@ -1,0 +1,10 @@
+obj-$(CONFIG_FINGERPRINT_GFX1XM_GOODIX)	+=  gfx1xm/
+obj-$(CONFIG_FINGERPRINT_AFS120)	+=  afs120/
+obj-$(CONFIG_FINGERPRINT_AFS120N)	+=  afs120n/
+obj-$(CONFIG_FINGERPRINT_ET310)		+=  et310/
+obj-$(CONFIG_FINGERPRINT_SUNWAVE_9551)		+=  sunwave9551_fp/
+obj-$(CONFIG_FINGERPRINT_GF3208_GOODIX)	+=  gf3208_goodix/
+obj-$(CONFIG_FINGERPRINT_GF368_GOODIX)	+=  gf368_goodix/
+obj-$(CONFIG_FINGERPRINT_FPS998)	+=  fps998/
+ccflags-y += -I$(srctree)/drivers/spi/mediatek/mt6735
+obj-y	+= fingerprint.o

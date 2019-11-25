@@ -1,0 +1,12 @@
+config HCT_FINGERPRINT_SUPPORT
+  bool "HCT_FINGERPRINT_SUPPORT"
+  default n
+
+source "drivers/misc/mediatek/fingerprint/gfx1xm/Kconfig"
+source "drivers/misc/mediatek/fingerprint/afs120/Kconfig"
+source "drivers/misc/mediatek/fingerprint/afs120n/Kconfig"
+source "drivers/misc/mediatek/fingerprint/et310/Kconfig"
+source "drivers/misc/mediatek/fingerprint/sunwave9551_fp/Kconfig"
+source "drivers/misc/mediatek/fingerprint/gf3208_goodix/Kconfig"
+source "drivers/misc/mediatek/fingerprint/gf368_goodix/Kconfig"
+source "drivers/misc/mediatek/fingerprint/fps998/Kconfig"

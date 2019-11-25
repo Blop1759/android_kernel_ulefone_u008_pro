@@ -1,0 +1,35 @@
+subdir-ccflags-y += -Werror
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/
+ccflags-y += -I$(srctree)/drivers/input/touchscreen/mediatek
+# In case the platform does NOT support this type of sensors
+obj-y   +=  mtk_tpd.o
+obj-y   +=  tpd_button.o
+obj-y   +=  tpd_calibrate.o
+obj-y   +=  tpd_debug.o
+obj-y   +=  tpd_default.o
+obj-y   +=  tpd_init.o
+obj-y   +=  tpd_misc.o
+obj-y   +=  tpd_setting.o
+
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT1151)	+=  GT1151/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT910)	+=  GT910/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GSL968)	+=  GSL968/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XXTB_HOTKNOT)	+=  GT9XXTB_hotknot/
+obj-$(CONFIG_TOUCHSCREEN_MTK_SYNAPTICS_I2C_RMI4)	+=  synaptics_i2c_rmi4/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT928)	+=  GT928/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XX_HOTKNOT_SCP)	+=  GT9XX_hotknot_scp/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT911)	+=  GT911/
+obj-$(CONFIG_TOUCHSCREEN_MTK_FT5X0X)	+=  ft5x0x/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XX_V24)	+=  GT9XX_V24/
+obj-$(CONFIG_TOUCHSCREEN_MTK_MSG28XX)	+=  msg28xx/
+obj-$(CONFIG_TOUCHSCREEN_MTK_MSG5846)  +=  msg5846/
+obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_3402)	+=  synaptics_3402/
+obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_OPPO)	+=  synaptics_oppo/
+obj-$(CONFIG_TOUCHSCREEN_MTK_FT_ALLINONE)	+=  ft_allinone/
+obj-$(CONFIG_TOUCHSCREEN_MTK_FOCALTECH)	+=  focaltech/
+obj-$(CONFIG_TOUCHSCREEN_MTK_ICN86XX)	+=  icn86xx/
+obj-$(CONFIG_AW9136_SUPPORT)	+=  AW9136/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XX_V26)	+=  GT9XX_V26/
+obj-$(CONFIG_TOUCHSCREEN_MTK_GT1X_V14)		+=  GT1X_V14/
+obj-$(CONFIG_TOUCHSCREEN_MTK_MSG2238)	+=  msg2238/
