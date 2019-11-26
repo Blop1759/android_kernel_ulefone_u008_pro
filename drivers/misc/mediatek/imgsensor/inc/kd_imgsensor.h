@@ -296,6 +296,8 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define SP2509MIPI_SENSOR_ID                    0x2509
 #define S5K3L2_SENSOR_ID                        0x30c2
 #define JX507MIPI_SENSOR_ID                     0xa507
+#define ST55A_SENSOR_ID							0x5675
+#define ST55AMIPI_SENSOR_ID				0x5675
 /* CAMERA DRIVER NAME */
 #define CAMERA_HW_DEVNAME                       "kd_camera_hw"
 /* SENSOR DEVICE DRIVER NAME */
@@ -466,6 +468,8 @@ NSFeature :  : RAWSensorInfo < _id >  :  : getFlickerPara \
 #define SENSOR_DRVNAME_SP2509_MIPI_RAW    "sp2509mipiraw"
 #define SENSOR_DRVNAME_S5K3L2_MIPI_RAW		"s5k3l2mipiraw"
 #define SENSOR_DRVNAME_JX507_MIPI_RAW     "jx507mipiraw"
+#define SENSOR_DRVNAME_ST55A_MIPI_RAW     "st55amipiraw"
+#define SENSOR_DRVNAME_ST55A_MIPI_RAW_SUB     "st55amipirawsub"
 /*******************************************************************************
 *
 ********************************************************************************/

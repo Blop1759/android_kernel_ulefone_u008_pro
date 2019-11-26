@@ -13,7 +13,7 @@
 
 
 */
-#define __HCT_PHONE_MIC_MODE__   2
+#define __HCT_PHONE_MIC_MODE__   5
  
  /*phone use exp audio pa*/
 #define __HCT_USING_EXTAMP_HP__  HCT_YES
@@ -29,7 +29,7 @@
 
 /*############### USB OTG releated config--START #####################*/
 
-#define __HCT_USB_MTK_OTG_SUPPORT__  HCT_YES
+#define __HCT_USB_MTK_OTG_SUPPORT__  HCT_NO
 
 #define __HCT_5G_WIFI_SUPPORT__  HCT_NO
 

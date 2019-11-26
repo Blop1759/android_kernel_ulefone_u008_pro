@@ -13,7 +13,8 @@
 
 
 */
-#define __HCT_PHONE_MIC_MODE__   2
+//ULEFONE U008_PRO
+#define __HCT_PHONE_MIC_MODE__   5
  
  /*phone use exp audio pa*/
 #define __HCT_USING_EXTAMP_HP__  HCT_YES

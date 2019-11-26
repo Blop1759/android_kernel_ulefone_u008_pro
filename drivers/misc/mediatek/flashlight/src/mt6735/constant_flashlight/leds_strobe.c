@@ -100,11 +100,24 @@ int FL_Enable(void)
       else
           flashlight_gpio_output(FL_MODE_PIN, 0);
 #elif __HCT_FLASHLIGHT_OCP8132_SUPPORT__
-if(g_duty)
+/*if(g_duty)
 	flashlight_gpio_output(FL_MODE_PIN, 1);
 else
 	flashlight_gpio_output(FL_EN_PIN, 1);
-
+*/
+//ULEFONE U008_PRO
+	int i;
+	if(g_duty)
+		flashlight_gpio_output(FL_MODE_PIN, 1);
+	else
+		flashlight_gpio_output(FL_MODE_PIN, 0);
+	for(i=0; i<9; i++)
+	{
+		flashlight_gpio_output(FL_EN_PIN, 0);
+		udelay(2);
+		flashlight_gpio_output(FL_EN_PIN, 1);
+		udelay(2);
+	}
 #else
       flashlight_gpio_output(FL_EN_PIN, 1);
 #endif

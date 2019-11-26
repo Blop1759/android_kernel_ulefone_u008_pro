@@ -4,13 +4,17 @@
 /*
       ====================================THIS IS custom CONFIG ==========================================
 */
+//NOT IN ULEFONE U008_PRO
+#define __HCT_SD_CARD_HOTPLUG_SUPPORT__  HCT_NO
 
-#define __HCT_SD_CARD_HOTPLUG_SUPPORT__  HCT_YES
+#define __HCT_SIM_HOTPLUG_SUPPORT__  HCT_NO
 
-#define __HCT_SIM_HOTPLUG_SUPPORT__  HCT_YES
+#define __HCT_EPL259X_PS_THRELD_LOW__     1000
+#define __HCT_EPL259X_PS_THRELD_HIGH__    1100
 
-#define __HCT_EPL259X_PS_THRELD_LOW__     500
-#define __HCT_EPL259X_PS_THRELD_HIGH__     800
+//#define __HCT_EPL259X_PS_THRELD_LOW__     500
+//#define __HCT_EPL259X_PS_THRELD_HIGH__    800
+
 
 #define __HCT_EPL2182_PS_THRELD_HIGH__     1000
 #define __HCT_EPL2182_PS_THRELD_LOW__     900
@@ -24,11 +28,11 @@
 
 #define __HCT_FM_LONG_ANA_RSSI_TH__  -240
 
-#define __HCT_FINGERPRINT_SUPPORT__ HCT_YES
+#define __HCT_FINGERPRINT_SUPPORT__ HCT_NO
 
 #define __HCT_AW9136_TS_SUPPORT__ HCT_NO
 
-#define __HCT_GTP_HOTKNOT__    HCT_YES
+#define __HCT_GTP_HOTKNOT__    HCT_NO
 
 #define __HCT_BATTERY_PROTECT_SUPPORT__ HCT_NO
 /*############### SPEAKER releated config #####################*/
@@ -46,6 +50,9 @@ __HCT_FLASHLIGHT_SGM3785_SUPPORT__
 #define __HCT_FLASHLIGHT_SGM3785_SUPPORT__ HCT_NO
 #define __HCT_FLASHLIGHT_AW3641_SUPPORT__ HCT_NO
 #define __HCT_FLASHLIGHT_OCP8132_SUPPORT__ HCT_YES
+
+#define __HCT_GPIO_FLASHLIGHT_EN_PIN__			 PINMUX_GPIO43__FUNC_GPIO43
+#define __HCT_GPIO_FLASHLIGHT_MODE_PINMUX__			PINMUX_GPIO55__FUNC_GPIO55
 
 #define __HCT_FLASHLIGHT_AW3141_SUPPORT__ HCT_NO
 
@@ -77,12 +84,12 @@ __HCT_FLASHLIGHT_SGM3785_SUPPORT__
 
 /*############### led releated config #####################*/
 /***mode type defined in hct_common_dts_config.h****/
-#define __HCT_RED_LED_MODE__                   __HCT_MT65XX_LED_MODE_PMIC__  
-#define __HCT_GREEN_LED_MODE__                 __HCT_MT65XX_LED_MODE_GPIO_G__
-#define __HCT_BLUE_LED_MODE__                  __HCT_MT65XX_LED_MODE_PMIC__
+#define __HCT_RED_LED_MODE__                   __HCT_MT65XX_LED_MODE_NONE__  
+#define __HCT_GREEN_LED_MODE__                 __HCT_MT65XX_LED_MODE_NONE__
+#define __HCT_BLUE_LED_MODE__                  __HCT_MT65XX_LED_MODE_NONE__
 #define __HCT_JOGBALL_BACKLIGHT_LED_MODE__     __HCT_MT65XX_LED_MODE_NONE__
 #define __HCT_KEYBOARD_BACKLIGHT_LED_MODE__    __HCT_MT65XX_LED_MODE_NONE__
-#define __HCT_BUTTON_BACKLIGHT_LED_MODE__      __HCT_MT65XX_LED_MODE_NONE__
+#define __HCT_BUTTON_BACKLIGHT_LED_MODE__      __HCT_MT65XX_LED_MODE_GPIO_KPD__
 #define __HCT_LCD_BACKLIGHT_LED_MODE__         __HCT_MT65XX_LED_MODE_CUST_BLS_PWM__
 
 
